@@ -1,0 +1,137 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #f7f7f7;
+    color: #1d1d1f; /* Texte presque noir mais doux */
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+input, button {
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #c7c7cc; /* Gris clair iOS */
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    background-color: #fafafa;
+    color: #1d1d1f;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus {
+    border-color: #007aff;
+    box-shadow: 0 0 6px rgba(0, 122, 255, 0.3);
+    background-color: #fff;
+}
+
+button {
+    background: #007aff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 9px rgba(0, 122, 255, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #005bb5;
+    box-shadow: 0 6px 12px rgba(0, 91, 181, 0.6);
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #004ecb;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 12px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #e5e5ea; /* ligne subtile entre items */
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3c3c4399;
+}
+
+.delete-yo {
+    color: #ff3b30;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.delete-yo:hover {
+    color: #c1271c;
+}
+
+/* Amélioration des titres */
+h1, h2 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #e5e5ea;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Pour les formulaires */
+form {
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        width: 95%;
+    }
+    input, button {
+        font-size: 16px;
+    }
+}
